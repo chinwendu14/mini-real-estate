@@ -2,12 +2,21 @@
 import { apartments } from "@/sharables/DummyData";
 import Image from "next/image";
 import { useSearchParams } from "next/navigation";
-import React, { Suspense } from "react";
+import React, { Suspense, useEffect, useState } from "react";
 
 const Page = () => {
-  const id = useSearchParams();
-  const aptId = id.get("id");
-  const apt = apartments.find((a) => a.id === aptId);
+  const params = useSearchParams();
+
+  // const id = useSearchParams();
+  // const aptId = id.get("id");
+
+  const [id, setId] = useState<string | null>(null);
+
+  useEffect(() => {
+    setId(params.get("id"));
+  }, [params]);
+
+  const apt = apartments.find((a) => a.id === id);
 
   if (!apt) return <p>Apartment not found.</p>;
   return (
