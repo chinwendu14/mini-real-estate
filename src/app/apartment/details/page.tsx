@@ -18,7 +18,7 @@ const Page = () => {
 
   const apt = apartments.find((a) => a.id === id);
 
-  if (!apt) return <p>Apartment not found.</p>;
+  // if (!apt) return <p>Apartment not found.</p>;
   return (
     <>
       <Suspense fallback={<p>Loading apartment details...</p>}>
@@ -28,7 +28,7 @@ const Page = () => {
           </h4>
           <div className="bg-white rounded-xl shadow p-4">
             <Image
-              src={apt.thumbnail}
+              src={`${apt?.thumbnail}`}
               alt={`Layout`}
               width={300}
               height={128}
@@ -37,13 +37,13 @@ const Page = () => {
 
             <div className="mt-4 text-lg">
               <p>
-                <strong>Area:</strong> {apt.area}
+                <strong>Area:</strong> {apt?.area}
               </p>
               <p>
-                <strong>Type:</strong> {apt.unitType}
+                <strong>Type:</strong> {apt?.unitType}
               </p>
               <p>
-                <strong>Rooms:</strong> {apt.rooms}
+                <strong>Rooms:</strong> {apt?.rooms}
               </p>
             </div>
           </div>
