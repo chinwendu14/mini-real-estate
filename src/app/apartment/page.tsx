@@ -21,7 +21,9 @@ const Page = () => {
                 router.push(`${APARTMENT_DETAILS_ROUTE}?id=${apt.id}`)
               }
               // inset-0
-              className="relative inset-0 group bg-white p-4 rounded-xl shadow cursor-pointer hover:shadow-lg transition"
+              className="relative
+              hover:bg-gray-200
+              inset-0 group bg-white p-4 rounded-xl shadow cursor-pointer hover:shadow-lg transition"
             >
               <div className="absolute bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 rounded-xl" />
 
