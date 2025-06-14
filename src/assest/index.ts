@@ -1,0 +1,23 @@
+export { default as Tower1 } from "./images/tower1.jpg";
+export { default as Tower2 } from "./images/tower2.jpg";
+export { default as Tower3 } from "./images/tower3.jpg";
+export { default as Floor1 } from "./images/floor1.jpg";
+export { default as Floor2 } from "./images/floor2.jpg";
+export { default as Floor3 } from "./images/floor3.jpeg";
+export { default as Floor4 } from "./images/floor4.webp";
+export { default as Floor5 } from "./images/floor5.jpg";
+export { default as Floor6 } from "./images/floor6.jpg";
+export { default as Floor7 } from "./images/floor7.jpg";
+export { default as Floor8 } from "./images/floor8.jpg";
+export { default as Floor9 } from "./images/floor9.jpg";
+export { default as Floor10 } from "./images/floor10.jpg";
+export { default as Floor11 } from "./images/floor11.jpg";
+export { default as Floor12 } from "./images/floor12.webp";
+export { default as Floor13 } from "./images/floor13.jpg";
+export { default as Floor14 } from "./images/floor14.jpg";
+export { default as Floor15 } from "./images/floor15.jpg";
+export { default as Apt1 } from "./images/apt1.jpg";
+export { default as Apt2 } from "./images/apt2.jpg";
+export { default as Apt3 } from "./images/apt3.jpg";
+
+export { default as Apt4 } from "./images/apt4.webp";
