@@ -1,14 +1,11 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 "use client";
 import { APARTMENT_ROUTE } from "@/constants/route.constant";
 import { Floors } from "@/sharables/DummyData";
 import Image from "next/image";
-import { useRouter, useSearchParams } from "next/navigation";
+import { useRouter } from "next/navigation";
 import React from "react";
 
 const Page = () => {
-  const tower = useSearchParams();
-  const towerId = tower.get("id");
   const router = useRouter();
   return (
     <>
