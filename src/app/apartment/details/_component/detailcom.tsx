@@ -14,6 +14,8 @@ const Detailcom = () => {
   }, [params]);
 
   const apt = apartments.find((a) => a.id === id);
+  if (!apt) return <p>Loading apartment data...</p>;
+  console.log(id);
   return (
     <div className=" p-3 min-h-screen flex flex-col items-center justify-center p-4">
       <h4 className="text-2xl text-primary font-bold mb-4">
@@ -21,7 +23,7 @@ const Detailcom = () => {
       </h4>
       <div className="bg-white rounded-xl shadow p-4">
         <Image
-          src={`${apt?.thumbnail}`}
+          src={apt?.thumbnail}
           alt={`Layout`}
           width={300}
           height={128}
